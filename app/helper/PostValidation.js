@@ -1,9 +1,9 @@
 const Joi = require("joi");
 
 const PostValidation = Joi.object({
-  Image: Joi.string().required(),
+  image: Joi.string().required(),
   postTitle: Joi.string().required(),
-  postDescription: Joi.string,
+  postDescription: Joi.string(),
 });
 
 module.exports = PostValidation;

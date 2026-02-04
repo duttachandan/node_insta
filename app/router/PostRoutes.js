@@ -6,15 +6,24 @@ const imageUploader = require("../helper/imageUploader");
 
 // Controller
 const PostController = require("../controller/PostController");
-Router.get("/getallpost", PostController.getPost);
+
+// Global Try Catch Error handler
+const wrapAsync = require("../utils/WrapAsync");
+
+// Routes
+Router.get("/getallpost", wrapAsync(PostController.getPost));
 Router.post(
   "/createPost",
   imageUploader.single("image"),
-  PostController.createPost,
+  wrapAsync(PostController.createPost),
 );
-Router.get("/deletepost/:id", PostController.deletePost);
-Router.get("/updatepost/:id", PostController.updatePost);
-Router.get("/getpostbyid/:id", PostController.showPostById);
-// Router.get('/deletepost/:id', PostController.softDelete);
+Router.get("/deletepost/:id", wrapAsync(PostController.deletePost));
+Router.post(
+  "/updatepost/:id",
+  imageUploader.single("image"),
+  wrapAsync(PostController.updatePost),
+);
+Router.get("/getpostbyid/:id", wrapAsync(PostController.showPostById));
+Router.get("/deletepost", wrapAsync(PostController.deleteAll));
 
 module.exports = Router;

@@ -7,12 +7,21 @@ const app = express();
 DBConnection();
 
 // middleware
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // middlewear for post routes
 const PostRoutes = require("./app/router/PostRoutes");
+const { message } = require("./app/helper/PostValidation");
 app.use("/post", PostRoutes);
+
+// Handleing All the Error
+app.use((err, req, res, next) => {
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+  });
+});
 
 // middlewear for reviews
 // const ReviewRoutes = require('./app/router/ReviewRoutes');
