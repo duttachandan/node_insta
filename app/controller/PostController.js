@@ -1,6 +1,7 @@
 const PostSchema = require("../model/PostSchema");
 const PostValidation = require("../helper/PostValidation");
 const ExpressError = require("../utils/ExpressError");
+const mongoose = require("mongoose");
 
 class PostController {
   // Show All the Post
@@ -29,9 +30,11 @@ class PostController {
   // DeletePost
   async deletePost(req, res) {
     const postId = req.params.id;
+    if (!mongoose.Types.ObjectId.isValid(postId)) {
+      throw new ExpressError(400, "Invalid Post ID format");
+    }
     if (!postId) throw new ExpressError(404, "post id not found");
     const Delete = await PostSchema.findByIdAndDelete(postId);
-    console.log(Delete);
     if (!Delete) throw new ExpressError(404, "Post not found");
     res.status(200).json(Delete);
   }
