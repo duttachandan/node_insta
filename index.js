@@ -12,8 +12,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // middlewear for post routes
 const PostRoutes = require("./app/router/PostRoutes");
-const { message } = require("./app/helper/PostValidation");
 app.use("/post", PostRoutes);
+
+// middlewear for reviews
+const ReviewRoutes = require("./app/router/ReviewRoutes");
+app.use("/review", ReviewRoutes);
 
 // Handleing All the Error
 app.use((err, req, res, next) => {
@@ -23,8 +26,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-// middlewear for reviews
-// const ReviewRoutes = require('./app/router/ReviewRoutes');
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT || 4000}`);

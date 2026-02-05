@@ -61,6 +61,7 @@ class PostController {
       }
     }
   }
+
   // Delete all Post
   async deleteAll(req, res) {
     const deleteData = await PostSchema.deleteMany({});
@@ -70,6 +71,7 @@ class PostController {
       res.send(deleteData.message);
     }
   }
+  
   // Show Post
   async showPostById(req, res) {
     const PostId = req.params.id;
