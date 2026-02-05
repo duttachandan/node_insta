@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 class PostController {
   // Show All the Post
   async getPost(req, res) {
-    const allPost = await PostSchema.find();
+    const allPost = await PostSchema.find().populate('reviews');
     res.status(200).json(allPost);
   }
 
@@ -76,7 +76,7 @@ class PostController {
   async showPostById(req, res) {
     const PostId = req.params.id;
     if (PostId) {
-      const PostDetails = await PostSchema.findById(PostId);
+      const PostDetails = await PostSchema.findById(PostId).populate('reviews');
       res.send(PostDetails);
     } else {
       throw new ExpressError(404, "Post Not Found");
