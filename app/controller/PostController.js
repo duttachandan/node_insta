@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 class PostController {
   // Show All the Post
   async getPost(req, res) {
-    const allPost = await PostSchema.find().populate('reviews');
+    const allPost = await PostSchema.find().populate("reviews");
     res.status(200).json(allPost);
   }
 
@@ -43,10 +43,11 @@ class PostController {
   async updatePost(req, res) {
     const PostId = req.params.id;
     if (!PostId) throw new ExpressError(404, "Post Id is not valid");
-    const updatedPost = {
-      image: req.file.path,
-      postTitle: req.body.postTitle,
-      postDescription: req.body.postDescription,
+
+    let updatedPost = {
+      image: req.file?.path,
+      postTitle: req.body?.postTitle,
+      postDescription: req.body?.postDescription,
     };
     console.log(updatedPost);
     const validatePost = PostValidation.validate(updatedPost);
@@ -71,12 +72,12 @@ class PostController {
       res.send(deleteData.message);
     }
   }
-  
+
   // Show Post
   async showPostById(req, res) {
     const PostId = req.params.id;
     if (PostId) {
-      const PostDetails = await PostSchema.findById(PostId).populate('reviews');
+      const PostDetails = await PostSchema.findById(PostId).populate("reviews");
       res.send(PostDetails);
     } else {
       throw new ExpressError(404, "Post Not Found");
