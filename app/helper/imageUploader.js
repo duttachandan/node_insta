@@ -1,4 +1,14 @@
+require("dotenv").config();
 const multer = require("multer");
+
+// CLOUDINAY Initiation
+const cloudinary = require("cloudinary").v2;
+
+cloudinary.config({
+  cloud_name: `${process.env.CLOUDINARY_NAME}`,
+  api_key: `${process.env.CLOUDINARY_KEY}`,
+  api_secret: `${process.env.CLOUDINARY_SECRET}`,
+});
 
 const MIME_TYPES = ["image/jpeg", "image/jpg", "image/avif", "image/png"];
 
@@ -6,6 +16,7 @@ const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     if (MIME_TYPES.includes(file.mimetype)) {
       cb(null, "uploads/");
+      // return new 
     } else {
       throw new Error("Wrong File Uploaded");
     }

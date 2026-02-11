@@ -6,6 +6,7 @@ const app = express();
 // DB Connection
 DBConnection();
 
+
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
