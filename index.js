@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 const rateLimit = require("./app/utils/ExpressRateLimit");
 app.use(rateLimit);
 
+// Creation of user
+const userRoutes = require("./app/router/userRoutes");
+app.use(userRoutes);
+
 // middlewear for post routes
 const PostRoutes = require("./app/router/PostRoutes");
 app.use("/post", PostRoutes);
@@ -33,6 +37,7 @@ app.use((err, req, res, next) => {
   });
 });
 
+// Port Initiation
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   logger.info("Connected to MongoDB");

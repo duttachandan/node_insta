@@ -2,3 +2,70 @@
 {"level":"info","message":[],"service":"user-service","timestamp":"2026-02-11T10:19:24.909Z"}
 {"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T10:33:57.758Z"}
 {"level":"info","message":[],"service":"user-service","timestamp":"2026-02-11T10:33:58.868Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:19:35.419Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:19:50.620Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:21:20.875Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:22:14.126Z"}
+{"level":"info","message":"Cannot destructure property 'username' of 'req.body' as it is undefined.","service":"user-service","timestamp":"2026-02-11T11:22:34.570Z"}
+{"level":"info","message":"Cannot destructure property 'username' of 'req.body' as it is undefined.","service":"user-service","timestamp":"2026-02-11T11:23:06.753Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:23:44.480Z"}
+{"level":"info","message":"this._makeMiddleware is not a function","service":"user-service","timestamp":"2026-02-11T11:23:48.008Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:24:25.270Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:24:27.553Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:24:59.513Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:25:00.829Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:25:09.405Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:25:38.045Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:25:40.140Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:25:55.227Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:26:03.614Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:26:06.714Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:26:11.598Z"}
+{"level":"info","message":"Unexpected field","service":"user-service","timestamp":"2026-02-11T11:26:25.779Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T11:26:58.621Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:27:25.946Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T11:27:26.721Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T11:27:31.435Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T11:28:00.912Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T11:28:07.430Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T11:28:21.673Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T12:37:13.869Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:38:21.374Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T12:38:25.708Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:38:48.342Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:39:36.290Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T12:39:39.874Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:39:51.435Z"}
+{"level":"info","message":"Cannot convert object to primitive value","service":"user-service","timestamp":"2026-02-11T12:39:51.955Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:40:08.255Z"}
+{"0":"c","1":"h","10":"t","11":"t","12":"a","13":"@","14":"g","15":"m","16":"a","17":"i","18":"l","19":".","2":"a","20":"c","21":"o","22":"m","3":"n","4":"d","5":"a","6":"n","7":".","8":"d","9":"u","level":"info","message":"chandan","service":"user-service","timestamp":"2026-02-11T12:40:09.378Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:40:41.290Z"}
+{"level":"info","message":"chandan.dutta@gmail.com","service":"user-service","timestamp":"2026-02-11T12:40:42.270Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:40:48.637Z"}
+{"level":"info","message":"chandan","service":"user-service","timestamp":"2026-02-11T12:40:49.471Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:40:59.640Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjaGFuZGFuLmR1dHRhQGdtYWlsLmNvbSIsInJvbGUiOiJjaGFuZGFuIiwiaWF0IjoxNzcwODEzNjYwLCJleHAiOjE3NzA4MTQ1NjB9.jz1Su2H8OQIFTP9iXRaKyi168C-VI4i8HiaagN1XE_E","service":"user-service","timestamp":"2026-02-11T12:41:00.294Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:42:51.005Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:43:21.155Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:43:45.105Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:45:11.716Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:45:50.184Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:46:52.648Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:48:04.171Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:48:41.511Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:48:58.769Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:48:59.752Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:50:11.919Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:50:12.573Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:51:51.599Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:51:52.449Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:52:00.076Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:52:03.188Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:52:18.917Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:52:20.476Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:52:44.016Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:53:11.411Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-11T12:53:12.972Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:53:43.904Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:54:34.732Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:55:16.944Z"}
