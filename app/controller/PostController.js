@@ -2,11 +2,13 @@ const PostSchema = require("../model/PostSchema");
 const PostValidation = require("../helper/PostValidation");
 const ExpressError = require("../utils/ExpressError");
 const mongoose = require("mongoose");
+const logger = require("../utils/Logger");
 
 class PostController {
   // Show All the Post
   async getPost(req, res) {
     const allPost = await PostSchema.find().populate("reviews");
+    logger.info(allPost);
     res.status(200).json(allPost);
   }
 

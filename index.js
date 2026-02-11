@@ -1,14 +1,20 @@
 require("dotenv").config();
 const express = require("express");
 const DBConnection = require("./app/config/db");
+const logger = require("./app/utils/Logger");
 
 const app = express();
+
 // DB Connection
 DBConnection();
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Express Limiter
+const rateLimit = require("./app/utils/ExpressRateLimit");
+app.use(rateLimit);
 
 // middlewear for post routes
 const PostRoutes = require("./app/router/PostRoutes");
@@ -20,6 +26,7 @@ app.use("/review", ReviewRoutes);
 
 // Handleing All the Error
 app.use((err, req, res, next) => {
+  logger.info(`${err.message}`);
   res.status(err.statusCode || 500).json({
     success: false,
     message: err.message || "Internal Server Error",
@@ -28,5 +35,6 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
+  logger.info("Connected to MongoDB");
   console.log(`server is running on http://localhost:${PORT || 4000}`);
 });
