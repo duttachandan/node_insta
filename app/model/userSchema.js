@@ -11,13 +11,12 @@ const userSchema = mongoose.Schema({
     required: true,
     unique: true,
   },
-  token: {
+  password: {
     type: String,
     required: true,
-    unique: true,
   },
 });
 
-const CreateUser = mongoose.model("user", userSchema);
+const CreateUser = mongoose.model("alluser", userSchema);
 
 module.exports = CreateUser;

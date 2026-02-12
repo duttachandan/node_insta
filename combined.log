@@ -69,3 +69,36 @@
 {"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:53:43.904Z"}
 {"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:54:34.732Z"}
 {"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-11T12:55:16.944Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-12T04:22:32.367Z"}
+{"level":"info","message":"token is not defined","service":"user-service","timestamp":"2026-02-12T04:24:07.114Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-12T04:24:42.735Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-12T04:25:15.790Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:25:19.514Z"}
+{"level":"info","message":"Connected to MongoDB","service":"user-service","timestamp":"2026-02-12T04:25:39.705Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:25:40.773Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:26:25.686Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:29:33.958Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:30:01.443Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-12T04:31:38.678Z"}
+{"level":"info","message":"generateHashPass is not a function","service":"user-service","timestamp":"2026-02-12T05:10:05.926Z"}
+{"level":"info","message":"invalid hash password","service":"user-service","timestamp":"2026-02-12T05:12:53.145Z"}
+{"level":"info","message":"user validation failed: password: Cast to string failed for value \"Promise { <pending> }\" (type Promise) at path \"password\"","service":"user-service","timestamp":"2026-02-12T05:13:06.560Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: username_1 dup key: { username: \"chandan212\" }","service":"user-service","timestamp":"2026-02-12T05:13:27.578Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: username_1 dup key: { username: \"chandan212\" }","service":"user-service","timestamp":"2026-02-12T05:26:05.637Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:27:03.295Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:28:39.443Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:32:39.443Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:33:10.973Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:33:35.590Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:33:54.200Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:34:23.221Z"}
+{"level":"info","message":"chandan.dutta323","service":"user-service","timestamp":"2026-02-12T05:34:56.085Z"}
+{"level":"info","message":"$2b$10$kmkjE0KuCUDs1qw/U7bvtODkADD.XDv1tnq91bXpxaZD9fh.ECZLC","service":"user-service","timestamp":"2026-02-12T05:34:56.093Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.users index: token_1 dup key: { token: null }","service":"user-service","timestamp":"2026-02-12T05:34:56.171Z"}
+{"level":"info","message":{"__v":0,"_id":"698d6791eee4310bb7db954f","email":"chandan.dutta323@gmail.com","password":"$2b$10$Vxcrdmj0s9IR9h29cUHnJe9fg4OPjkmd/tUpa/2QdUhommZuVRAhK","username":"chandan.dutta323"},"service":"user-service","timestamp":"2026-02-12T05:39:29.338Z"}
+{"level":"info","message":{"__v":0,"_id":"698d67a5eee4310bb7db9551","email":"chandan.dutta3234@gmail.com","password":"$2b$10$vzhXO1MzvxMLTpjBLxaAnOdNVRPO0nyx8SmT65xIJPgvNSNyHflmS","username":"chandan.dutta3234"},"service":"user-service","timestamp":"2026-02-12T05:39:49.917Z"}
+{"level":"info","message":{"__v":0,"_id":"698d67c1eee4310bb7db9553","email":"chandan.dutta3234@gmail.com","password":"$2b$10$rSXxcJ.ux2mhqODeWhxG3.lNc1VWiZMzLTeMbgPFNmzfTy/Be8ECm","username":"chandan.dutta3234"},"service":"user-service","timestamp":"2026-02-12T05:40:17.701Z"}
+{"level":"info","message":{"__v":0,"_id":"698d67d0eee4310bb7db9555","email":"chandan.dutta3234@gmail.com","password":"$2b$10$RYft3ZQhbwQKd8dzUSqQRue3maBX7LPF4P3PMNmwRV958nLkA8i1O","username":"chandan.dutta3234"},"service":"user-service","timestamp":"2026-02-12T05:40:33.003Z"}
+{"level":"info","message":{"__v":0,"_id":"698d68954116756b4226e39b","email":"chandan.dutta3234@gmail.com","password":"$2b$10$9fz0r.bzv6Q4P/S3.RcUB.6O7ut0aai8F1Paay1YxHvmP5NPuh.du","username":"chandan.dutta3234"},"service":"user-service","timestamp":"2026-02-12T05:43:49.324Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.allusers index: username_1 dup key: { username: \"chandan.dutta3234\" }","service":"user-service","timestamp":"2026-02-12T05:43:51.658Z"}
+{"level":"info","message":{"__v":0,"_id":"698d689d4116756b4226e39f","email":"chandan.dutta323@gmail.com","password":"$2b$10$vQdjIn1a21S84F09WbUqmucBf/Gb.wPwA9eCvnbkof/o58DrXtcJi","username":"chandan.dutta323"},"service":"user-service","timestamp":"2026-02-12T05:43:58.024Z"}

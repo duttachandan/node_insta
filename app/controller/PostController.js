@@ -1,5 +1,5 @@
 const PostSchema = require("../model/PostSchema");
-const PostValidation = require("../helper/PostValidation");
+const PostValidation = require("../utils/PostValidation");
 const ExpressError = require("../utils/ExpressError");
 const mongoose = require("mongoose");
 const logger = require("../utils/Logger");

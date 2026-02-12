@@ -1,7 +1,7 @@
 const ReviewSchema = require("../model/ReviewSchema");
 const PostSchema = require("../model/PostSchema");
 const ExpressError = require("../utils/ExpressError");
-const ReviewValidation = require("../helper/ReviewValidation");
+const ReviewValidation = require("../utils/ReviewValidation");
 const mongoose = require("mongoose");
 
 class ReviewController {

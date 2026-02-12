@@ -30,7 +30,7 @@ app.use("/review", ReviewRoutes);
 
 // Handleing All the Error
 app.use((err, req, res, next) => {
-  logger.info(`${err.message}`);
+  logger.info(`${err.message || "Internal Server Error"}`);
   res.status(err.statusCode || 500).json({
     success: false,
     message: err.message || "Internal Server Error",
@@ -40,6 +40,5 @@ app.use((err, req, res, next) => {
 // Port Initiation
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
-  logger.info("Connected to MongoDB");
   console.log(`server is running on http://localhost:${PORT || 4000}`);
 });

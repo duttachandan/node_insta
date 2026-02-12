@@ -5,5 +5,6 @@ const imageUploader = require("../helper/imageUploader");
 
 Router.post("/createuser", imageUploader.none(), userController.createUser);
 Router.post("/loginuser", imageUploader.none(), userController.loginUser);
+Router.get("/user", userController.getUser);
 
 module.exports = Router;
