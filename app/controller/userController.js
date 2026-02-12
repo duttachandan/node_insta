@@ -64,6 +64,8 @@ class userController {
       token: generateToken,
     });
   }
+  // user soft Deletion
+  
 }
 
 module.exports = new userController();
