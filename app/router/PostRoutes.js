@@ -9,29 +9,30 @@ const PostController = require("../controller/PostController");
 
 // Global Try Catch Error handler
 const wrapAsync = require("../utils/WrapAsync");
-const refreshToken = require("../helper/refreshToken");
+const verifyToken = require("../helper/refreshToken");
 
 // Routes
 Router.get("/getallpost", wrapAsync(PostController.getPost));
+Router.get("/getpostbyid/:id", wrapAsync(PostController.showPostById));
+
+// Protected Routes
 Router.post(
   "/createPost",
-  refreshToken,
+  verifyToken,
   imageUploader.single("image"),
   wrapAsync(PostController.createPost),
 );
 Router.get(
   "/deletepost/:id",
-  refreshToken,
+  verifyToken,
   wrapAsync(PostController.deletePost),
 );
 Router.post(
   "/updatepost/:id",
-  refreshToken,
+  verifyToken,
   imageUploader.single("image"),
   wrapAsync(PostController.updatePost),
 );
-Router.get("/getpostbyid/:id", wrapAsync(PostController.showPostById));
-
 
 Router.get("/deletepost", wrapAsync(PostController.deleteAll));
 
