@@ -1,15 +1,14 @@
+<p>
 Possibe Routes -
----
+</p>
+
+<p>
 User Routes -
----
-create user - http://localhost:3000/createuser(Post)
----
-fields - email and password
----
-login user - http://localhost:3000/loginuser(Post)
----
-user list - http://localhost:3000/user(get)
----
+- create user - http://localhost:3000/createuser(Post)
+- fields - email and password
+- login user - http://localhost:3000/loginuser(Post)
+- user list - http://localhost:3000/user(get)
+</p>
 
 Post Routes -
 ---
