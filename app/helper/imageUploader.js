@@ -20,7 +20,7 @@ const storage = new CloudinaryStorage({
     allowed_format: MIME_TYPES,
     // format: async (req, file) => MIME_TYPES,
     public_id: (req, file) => {
-      console.log(file.originalname.split('.')[0]);
+      // console.log(file.originalname.split('.')[0]);
       return Date.now() + "-" + file.originalname?.split('.')[0];
     },
   },

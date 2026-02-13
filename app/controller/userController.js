@@ -35,7 +35,7 @@ class userController {
       email: email,
     };
     const token = jsonwebtoken.sign(payload, SECRET_KEY, {
-      expiresIn: "15m",
+      expiresIn: "60m",
     });
     if (!token) throw ExpressError(404, "Invalid Token Error");
     res.json({
@@ -47,7 +47,9 @@ class userController {
   // user sign in
   async loginUser(req, res) {
     const { email, password } = req.body;
-    const userData = await userSchema.findOne({ email });
+    console.log(email, password);
+    const userData = await userSchema.findOne({ email: email });
+    console.log(userData);
     if (!userData) throw new ExpressError(404, "user credentials not found");
     const isPassMatch = await bcrypt.compare(password, userData.password);
     if (!isPassMatch) throw new ExpressError(401, "invalid password");
@@ -56,7 +58,7 @@ class userController {
       email: userData.email,
     };
     const generateToken = jsonwebtoken.sign(payload, SECRET_KEY, {
-      expiresIn: "15m",
+      expiresIn: "60m",
     });
     res.json({
       username: userData.username,
@@ -65,7 +67,6 @@ class userController {
     });
   }
   // user soft Deletion
-  
 }
 
 module.exports = new userController();
