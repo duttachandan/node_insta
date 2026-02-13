@@ -29,3 +29,4 @@ const userSchema = Schema({
 const CreateUser = mongoose.model("alluser", userSchema);
 
 module.exports = CreateUser;
+

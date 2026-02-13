@@ -6,9 +6,7 @@ const CommentSchema = Schema(
       type: String,
       required: true,
     },
-    reply: {
-      type: String,
-    },
+    reply: [{ type: Schema.Types.ObjectId, ref: "comments" }],
     user: { type: Schema.Types.ObjectId, ref: "alluser" },
   },
   {
