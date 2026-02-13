@@ -14,28 +14,29 @@ user list - http://localhost:3000/user(get)
 <br>
 </p>
 
-## Post Routes -
-
-## posts list - http://localhost:3000/post/getallpost(get)
-
-## posts by id - http://localhost:3000/post/getpostbyid/:id(get)
-
-## create post - http://localhost:3000/post/createPost(post)
-
-## image, postTitle, postDescription, user
-
-## delete post - http://localhost:3000/post/deletepost/:id(get)
-
-## update post - http://localhost:3000/post/updatepost/:id(post)
-
-## delete all post - http://localhost:3000/post/deletepost(get)
-
-## Comments Routes -
-
-## create Comment - http://localhost:3000/comments/getpostbyid/:postid(post)
-
-## comment, user
-
-## delete Comment - http://localhost:3000/comments/getpostbyid/:postid/deletecomment/:id(get)
-
-## update Comment - http://localhost:3000/comments/getpostbyid/:postid/updatecomments/:id(post)
+Post Routes -
+<br>
+posts list - http://localhost:3000/post/getallpost(get)
+<br>
+posts by id - http://localhost:3000/post/getpostbyid/:id(get)
+<br>
+create post - http://localhost:3000/post/createPost(post)
+<br>
+image, postTitle, postDescription, user
+<br>
+delete post - http://localhost:3000/post/deletepost/:id(get)
+<br>
+update post - http://localhost:3000/post/updatepost/:id(post)
+<br>
+delete all post - http://localhost:3000/post/deletepost(get)
+<br>
+Comments Routes -
+<br>
+create Comment - http://localhost:3000/comments/getpostbyid/:postid(post)
+<br>
+comment, user
+<br>
+delete Comment - http://localhost:3000/comments/getpostbyid/:postid/deletecomment/:id(get)
+<br>
+update Comment - http://localhost:3000/comments/getpostbyid/:postid/updatecomments/:id(post)
+<br>
