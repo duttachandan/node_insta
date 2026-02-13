@@ -14,8 +14,10 @@ user list - http://localhost:3000/user(get)
 <br>
 </p>
 
+<p>
 Post Routes -
-<br>
+</p>
+<p>
 posts list - http://localhost:3000/post/getallpost(get)
 <br>
 posts by id - http://localhost:3000/post/getpostbyid/:id(get)
@@ -29,7 +31,9 @@ delete post - http://localhost:3000/post/deletepost/:id(get)
 update post - http://localhost:3000/post/updatepost/:id(post)
 <br>
 delete all post - http://localhost:3000/post/deletepost(get)
-<br>
+</p>
+
+<p>
 Comments Routes -
 <br>
 create Comment - http://localhost:3000/comments/getpostbyid/:postid(post)
@@ -39,4 +43,4 @@ comment, user
 delete Comment - http://localhost:3000/comments/getpostbyid/:postid/deletecomment/:id(get)
 <br>
 update Comment - http://localhost:3000/comments/getpostbyid/:postid/updatecomments/:id(post)
-<br>
+</p>
