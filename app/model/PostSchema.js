@@ -17,7 +17,8 @@ const PostSchema = Schema(
     postDescription: {
       type: String,
     },
-    reviews: [{ type: Schema.Types.ObjectId, ref: "Review" }],
+    Comments: [{ type: Schema.Types.ObjectId, ref: "Comments" }],
+    user: { type: Schema.Types.ObjectId, ref: "alluser" },
   },
   {
     timestamps: true,
@@ -27,5 +28,3 @@ const PostSchema = Schema(
 const Post = mongoose.model("Post", PostSchema);
 
 module.exports = Post;
-
-

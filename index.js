@@ -24,9 +24,9 @@ app.use(userRoutes);
 const PostRoutes = require("./app/router/PostRoutes");
 app.use("/post", PostRoutes);
 
-// middlewear for reviews
-const ReviewRoutes = require("./app/router/ReviewRoutes");
-app.use("/review", ReviewRoutes);
+// middlewear for Comments
+const CommentsRoutes = require("./app/router/CommentsRoutes");
+app.use("/comments", CommentsRoutes);
 
 // Handleing All the Error
 app.use((err, req, res, next) => {

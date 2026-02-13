@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-const userSchema = mongoose.Schema({
+const { Schema } = mongoose;
+
+const userSchema = Schema({
   username: {
     type: String,
     required: true,
@@ -15,6 +17,13 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  post: [{ type: Schema.Types.ObjectId, ref: "Post" }],
+  comments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Comments",
+    },
+  ],
 });
 
 const CreateUser = mongoose.model("alluser", userSchema);

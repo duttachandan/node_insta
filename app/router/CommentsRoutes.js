@@ -5,30 +5,29 @@ const Router = express.Router();
 const WrapAsync = require("../utils/WrapAsync");
 
 // Controller
-const ReviewController = require("../controller/ReviewController");
+const CommentsController = require("../controller/CommentsController");
 
 // multer Image Uploader
 const imageUploader = require("../helper/imageUploader");
 
-// Create New Reviews
+// Create New Comments
 Router.post(
   "/getpostbyid/:postid",
   imageUploader.none(),
-  WrapAsync(ReviewController.createReview),
+  WrapAsync(CommentsController.createComment),
 );
 
-// Delete Reviews
+// Delete Comments
 Router.get(
-  "/getpostbyid/:postid/deletereview/:id",
-  WrapAsync(ReviewController.deleteReview),
+  "/getpostbyid/:postid/deletecomment/:id",
+  WrapAsync(CommentsController.deleteComment),
 );
 
-// Update Reviews
+// Update Comments
 Router.post(
-  "/getpostbyid/:postid/updatereview/:id",
+  "/getpostbyid/:postid/updatecomments/:id",
   imageUploader.none(),
-  WrapAsync(ReviewController.updateReview),
+  WrapAsync(CommentsController.updateComment),
 );
 
 module.exports = Router;
-
