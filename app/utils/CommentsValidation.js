@@ -1,7 +1,8 @@
 const Joi = require("joi");
 
 const CommentsValidation = Joi.object({
-  Comment: Joi.string().required(),
+  comment: Joi.string().required(),
+  reply: Joi.array(),
   user: Joi.string().required(),
 });
 

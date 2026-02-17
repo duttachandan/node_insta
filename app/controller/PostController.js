@@ -1,13 +1,10 @@
 require("dotenv").config();
 const PostSchema = require("../model/PostSchema");
 const userSchema = require("../model/userSchema");
+const commentSchema = require("../model/CommentSchema");
 const PostValidation = require("../utils/PostValidation");
 const ExpressError = require("../utils/ExpressError");
 const mongoose = require("mongoose");
-const logger = require("../utils/Logger");
-const jsonwebtoken = require("jsonwebtoken");
-const Post = require("../model/PostSchema");
-const SECRET_KEY = process.env.SECRET_KEY;
 
 class PostController {
   // Show All the Post
@@ -29,28 +26,28 @@ class PostController {
     } else {
       throw new ExpressError(404, "Post Not Found");
     }
-    // Show Post By ID
   }
 
   // Create New Posts
   async createPost(req, res) {
     const { email } = req.user;
-    const userCredentials = await userSchema.findOne({ email });
-    if (!userCredentials)
-      throw new ExpressError(404, "user credentials not found");
+    const user = await userSchema.findOne({ email });
+    if (!user) throw new ExpressError(404, "user credentials not found");
     const PostData = {
       image: req.file?.path,
       postTitle: req.body.postTitle,
       postDescription: req.body.postDescription,
-      user: userCredentials.toObject(),
+      user: user.toObject(),
     };
-    const postDataValidation = PostValidation.validate(PostData);
-    const { error } = postDataValidation;
+    const { error } = PostValidation.validate(PostData);
     if (error) throw new ExpressError(404, error.message);
     const post = new PostSchema(PostData);
     const savePost = await post.save();
+    user.post.push(savePost);
+    await user.save();
     res.status(200).json(savePost);
   }
+
   // DeletePost
   async deletePost(req, res) {
     const { email } = req.user;
@@ -58,15 +55,31 @@ class PostController {
     if (!mongoose.Types.ObjectId.isValid(postId)) {
       throw new ExpressError(400, "Invalid Post ID format");
     }
-    if (!postId) throw new ExpressError(404, "post id not found");
-    const findUserOfThePost =
-      await PostSchema.findById(postId).populate("user");
-    if (findUserOfThePost.user.email.toString() != email)
+    const findUserOfThePost = await PostSchema.findById(postId);
+    const user = await userSchema.findOne({ email });
+    if (!user) throw new ExpressError(404, "User not found");
+    console.log(user._id);
+    if (findUserOfThePost.user._id.toString() != user._id.toString())
       throw new ExpressError(401, "you are unothorized to delete this post");
+
+    // Post Deletion
     const Delete = await PostSchema.findByIdAndDelete(postId);
     if (!Delete) throw new ExpressError(404, "Post not found");
+
+    // Find The Post Id and then delete from the comments
+    const deleteUserComment = findUserOfThePost?.post.map((elm, id) => {
+      if (elm == Delete._id) {
+        return id;
+      }
+    });
+    findUserOfThePost?.post.splice(deleteUserComment, 1);
+    await findUserOfThePost.save();
+
+    // delete from comments schema
+    await commentSchema.deleteMany({ post: postId });
     res.status(200).json(Delete);
   }
+
   // UpdatePost
   async updatePost(req, res) {
     const { email } = req.user;
@@ -80,8 +93,6 @@ class PostController {
     };
     const validatePost = PostValidation.validate(updatedPost);
     const postCredentials = await PostSchema.findById(PostId).populate("user");
-    console.log(postCredentials);
-    console.log(email);
     if (postCredentials.user.email != email)
       throw new ExpressError(
         401,

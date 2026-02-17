@@ -170,3 +170,54 @@
 {"level":"info","message":"Cannot read properties of null (reading 'username')","service":"user-service","timestamp":"2026-02-13T12:46:43.447Z"}
 {"level":"info","message":"Cannot read properties of null (reading 'username')","service":"user-service","timestamp":"2026-02-13T12:47:32.805Z"}
 {"level":"info","message":"you don't have the correct authorization to update this post","service":"user-service","timestamp":"2026-02-13T12:49:42.028Z"}
+{"level":"info","message":"\"Comment\" is required","service":"user-service","timestamp":"2026-02-17T04:19:28.664Z"}
+{"level":"info","message":"\"Comment\" is required","service":"user-service","timestamp":"2026-02-17T04:19:33.921Z"}
+{"level":"info","message":"\"user\" is required","service":"user-service","timestamp":"2026-02-17T04:19:40.123Z"}
+{"level":"info","message":"\"user\" is required","service":"user-service","timestamp":"2026-02-17T04:21:41.289Z"}
+{"level":"info","message":"\"comment\" is required","service":"user-service","timestamp":"2026-02-17T04:24:53.788Z"}
+{"level":"info","message":"\"comment\" is required","service":"user-service","timestamp":"2026-02-17T04:25:13.477Z"}
+{"level":"info","message":"\"comment\" is required","service":"user-service","timestamp":"2026-02-17T04:25:21.377Z"}
+{"level":"info","message":"You are not authorized to delete this comment","service":"user-service","timestamp":"2026-02-17T04:31:12.521Z"}
+{"level":"info","message":"You are not authorized to delete this comment","service":"user-service","timestamp":"2026-02-17T04:31:33.461Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-17T04:36:14.294Z"}
+{"level":"info","message":"\"comment\" is required","service":"user-service","timestamp":"2026-02-17T04:36:40.037Z"}
+{"level":"info","message":"dataOfThePost.save(...).populate is not a function","service":"user-service","timestamp":"2026-02-17T04:37:35.686Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T04:56:47.995Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T04:57:24.114Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T04:59:45.267Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T05:00:42.254Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T05:00:56.547Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T05:01:16.318Z"}
+{"level":"info","message":"invalid token","service":"user-service","timestamp":"2026-02-17T05:01:21.348Z"}
+{"level":"info","message":"Parameter \"filter\" to findOne() must be an object, got \"Chandan.dutta@gmail.com\" (type string)","service":"user-service","timestamp":"2026-02-17T05:04:58.605Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:05:35.065Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:06:09.089Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:06:21.408Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:07:48.592Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:07:53.672Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:09:55.855Z"}
+{"level":"info","message":"Parameter \"filter\" to findOne() must be an object, got \"Chandan.dutta@gmail.com\" (type string)","service":"user-service","timestamp":"2026-02-17T05:12:32.507Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:13:09.896Z"}
+{"level":"info","message":"findUser.splice is not a function","service":"user-service","timestamp":"2026-02-17T05:13:20.265Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T05:13:51.640Z"}
+{"level":"info","message":"user credentials not found","service":"user-service","timestamp":"2026-02-17T06:21:28.408Z"}
+{"level":"info","message":{"__v":0,"_id":"69940b7895ac7cfa4c59acad","comments":[],"email":"Chandan.dutta@gmail.com","password":"$2b$10$tnYWaf8PG767G4g8XaNOhu7dGlXRokdTkwVmxCrqXCBr0dGZwiAdK","post":[],"username":"Chandan.dutta"},"service":"user-service","timestamp":"2026-02-17T06:32:24.573Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-17T06:34:13.101Z"}
+{"level":"info","message":"token is require for authentication","service":"user-service","timestamp":"2026-02-17T07:04:31.550Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T07:14:08.263Z"}
+{"level":"info","message":"userCredentials is not defined","service":"user-service","timestamp":"2026-02-17T07:14:19.847Z"}
+{"level":"info","message":"userCredentials is not defined","service":"user-service","timestamp":"2026-02-17T07:26:50.775Z"}
+{"level":"info","message":"userCredentials is not defined","service":"user-service","timestamp":"2026-02-17T07:27:24.212Z"}
+{"level":"info","message":{"__v":0,"_id":"6994235acc138b143879881a","comments":[],"email":"Chandan.dutta@gmail.com","password":"$2b$10$xTl0OyPF69G3LeyppCkfXedETN1OwWtBNzv30Jy8SpnGJlIftJcZW","post":[],"username":"Chandan.dutta"},"service":"user-service","timestamp":"2026-02-17T08:14:18.110Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-17T08:18:53.587Z"}
+{"level":"info","message":"jwt expired","service":"user-service","timestamp":"2026-02-17T08:21:01.752Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T08:21:16.452Z"}
+{"level":"info","message":"E11000 duplicate key error collection: crud.allusers index: username_1 dup key: { username: \"Chandan.dutta\" }","service":"user-service","timestamp":"2026-02-17T08:29:36.233Z"}
+{"level":"info","message":{"__v":0,"_id":"69942725e0d654309bd75da7","comments":[],"email":"Chandan.dutta@gmail.com","password":"$2b$10$pjreP0n7YDrVwibKcF23PuavPXw1Ej20MG7Oh9N0bm7/srld6feUS","post":[],"username":"Chandan.dutta"},"service":"user-service","timestamp":"2026-02-17T08:30:29.989Z"}
+{"level":"info","message":"you are unothorized to delete this post","service":"user-service","timestamp":"2026-02-17T08:31:20.666Z"}
+{"level":"info","message":"you are unothorized to delete this post","service":"user-service","timestamp":"2026-02-17T08:31:43.263Z"}
+{"level":"info","message":"you are unothorized to delete this post","service":"user-service","timestamp":"2026-02-17T08:32:20.402Z"}
+{"level":"info","message":"findUser is not defined","service":"user-service","timestamp":"2026-02-17T08:32:35.932Z"}
+{"level":"info","message":"Cannot read properties of null (reading 'user')","service":"user-service","timestamp":"2026-02-17T08:33:11.330Z"}
+{"level":"info","message":{"__v":0,"_id":"699428823e211101a9fde16e","comments":[],"email":"Chandan.dutta@gmail.com","password":"$2b$10$VWRA5kqMa1a/Nd5pWpoEUO298O4xcPs9LbUintvODjBuOVTiye69q","post":[],"username":"Chandan.dutta"},"service":"user-service","timestamp":"2026-02-17T08:36:18.407Z"}
+{"level":"info","message":"Cannot read properties of undefined (reading 'map')","service":"user-service","timestamp":"2026-02-17T08:37:01.606Z"}

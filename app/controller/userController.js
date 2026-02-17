@@ -67,6 +67,11 @@ class userController {
     });
   }
   // user soft Deletion
+  async deleteAllUser(req, res) {
+    const deleteAllUser = await userSchema.deleteMany({});
+    console.log(deleteAllUser);
+    res.status(200).json(deleteAllUser);
+  }
 }
 
 module.exports = new userController();
